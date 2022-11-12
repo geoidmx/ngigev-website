@@ -1,0 +1,54 @@
+jumbotron:
+  title: NIGGEV
+  subtitle: Información Geográfica Voluntaria
+  description: 
+    Herramienta tecnológica para la integración de Información Geográfica 
+    Voluntaria en la actualización de nombres geográficos.
+  image: /assets/img/map.jpg
+
+calltoaction:
+  title: Trabajamos en
+  description: 
+    Visualizar las diferencias de objetos geográficos y de atributos principales, 
+    entre la base de datos oficiales de un Estado Miembro del IPGH participante del proyecto, 
+    y la de OpenStreetMap (OSM).
+  link: /vision-general/
+
+program:
+  title: Proyecto de Asistencia Técnica del Instituto Panamericano de Geografía e Historia
+  description: 
+    Or keep it light and add a border for some added definition to the boundaries of your content. 
+    Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing 
+    of both column's content for equal-height.
+
+ourwork:
+  title: Nuestros Avances
+
+participants:
+  title: Instituciones Participantes
+  list:
+    - name: COL
+      description: 
+        Estado Miembro del IPGH
+        participante del proyecto.
+    - name: CR
+      description:
+        Estado Miembro del IPGH
+        participante del proyecto.
+    - name: MEX
+      description: 
+        Estado Miembro del IPGH
+        participante del proyecto.
+    - name: PAN
+      description: 
+        Estado Miembro del IPGH
+        participante del proyecto.
+    - name: RD
+      description: 
+        Estado Miembro del IPGH
+        participante del proyecto.
+    - name: IPGH
+      description: 
+        Estado Miembro del IPGH
+        participante del proyecto.
+    
