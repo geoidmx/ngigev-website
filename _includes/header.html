@@ -1,8 +1,8 @@
 <header class="container">
     <nav class="navbar navbar-expand-lg bg-white my-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="/">
-                <img src="{{ "/assets/img/skill-development.png" | relative_url }}" alt="NGIGEV" height="40px;">
+            <a class="navbar-brand fw-bold" href="{{ / | relative_url }}">
+                <img src="{{ "/assets/img/skill-development.png" | relative_url}}" alt="NGIGEV" height="40px;">
                 NIGIGEV</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     {% for item in site.data.navbar %}
                     <li class="nav-item">
-                        <a class="nav-link fw-bold ms-3" href="{{ item.link }}"> {{ item.name }}</a>
+                        <a class="nav-link fw-bold ms-3" href="{{ item.link | relative_url}}"> {{ item.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>

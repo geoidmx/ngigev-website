@@ -20,13 +20,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-8 px-5">{{ content }}</div>
-      <div class="col-3 mx-5 h-100 p-3 border rounded-2">
+      <div class="col-12 col-md-8 px-5">{{ content }}</div>
+      <div class="col-12 col-md-3 mx-md-5 h-100 p-3 border rounded-2">
         {% assign ourwork = site.data.home['ourwork'] %}
-        <h5 class="fw-bold my-3 text-center ">{{ ourwork.title }}</h5>
+        <h5 class="fw-bold my-3 text-center mt-5">{{ ourwork.title }}</h5>
         <ul class="list-group list-group-flush">
           {% for post in site.posts %}
-          <li class="list-group-item">{{ post.title }}</li>
+          <li class="list-group-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
