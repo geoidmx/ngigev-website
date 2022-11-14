@@ -1,14 +1,13 @@
-
-
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "ngigev-website" # the subpath of your site, e.g. /blog
+# Config File
 title: "NGIGEV - Nombres Geogroáficos Voluntarios" # the name of your site, e.g. ACME Corp.
-email: hola@ipgh.com
+email: hola@geoid.mx
 description: >- # this means to ignore newlines until "baseurl:"
   Visualizar las diferencias de objetos geográficos y de atributos principales, 
-  entre la base de datos oficiales de un Estado Miembro del IPGH participante del proyecto, y la de OpenStreetMap (OSM).
-baseurl: "" # the subpath of your site, e.g. /blog
+  entre la base de datos oficiales de un Estado Miembro del IPGH, y la de OpenStreetMap (OSM).
+baseurl: "ngigev-website" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: geoid_mx
+github_username:  geoidmx
 
 sass:
   sass_dir: assets/css
