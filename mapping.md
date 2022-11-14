@@ -6,7 +6,7 @@ permalink: /cartografia-colaborativa/
 image: /assets/img/triangles.png
 ---
 
-## OpenStreetMap
+### OpenStreetMap
 
 OpenStreetMap es un lugar para el mapeo de las cosas que son reales y actuales - esto incluye millones de edificios, carreteras, y otros detalles acerca de lugares. Puede mapear cualquier elemento de la vida real que le interese.
 

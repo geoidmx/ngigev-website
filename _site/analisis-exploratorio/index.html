@@ -4,8 +4,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Analisis Exploratorio de Datos - NGIGEV - Nombres Geogroáficos Voluntarios</title>
-  <link rel="stylesheet" href="/%20/assets/css/main.css">
+  <title>Analísis Exploratorio de Datos - NGIGEV - Nombres Geogroáficos Voluntarios</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
 
 </head>
 
@@ -35,6 +35,10 @@
                         <a class="nav-link fw-bold ms-3" href="/cartografia-colaborativa/"> Cartografia Colaborativa</a>
                     </li>
                     
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-3" href="https://geoid.mx/ipgh-dev/site/"> Maqueta Web</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -43,31 +47,61 @@
 
   <main class="container">
     <div class="mb-4">
-      <img src=" /assets/img/map.jpg" class="img-fluid" alt="mapa">
+      <img src=" /assets/img/analisis.jpg" class="img-fluid" alt="mapa">
     </div>
-    <h2 class="mt-5">Analisis Exploratorio de Datos</h2>
-    <p class="mb-5"><span>Arbekos GH</span></p>
-    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <div class="row">
+      <div class="col-12 col-md-8 px-5">
+        <h2 class="mt-5">Analísis Exploratorio de Datos</h2>
+        <p class="mb-5 text-muted"><span>Zitlaly Flores, Antonio de Jesús</span></p>
+        <p>Para abordar el tema de integración de información geográfica voluntaria por medio de una comparación con fuentes de datos oficiales, se realizó un análisis contextual desarrollado en las siguientes fases:</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h5 id="análisis-de-información">Análisis de información.</h5>
+<p>Se disgregó el alcance del proyecto en los siguientes cuestionamientos:</p>
+<ul>
+  <li>¿Qué información se va a comparar?,</li>
+  <li>¿En qué formato se encuentra disponible?,</li>
+  <li>¿Cómo hacer una comparación a nivel de elementos espaciales y de atributos?, y,</li>
+  <li>¿Qué herramientas tecnológicas permiten el análisis?</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p>Se estudiaron las estructuras de las fuentes de información y sus limitantes, considerando dos opciones: la información puede ser obtenida y manipulada por medio de un servicio WFS o bien en formatos estándar para la representación espacial de objetos (GeoJSON o Shapefile). A su vez, se definió la comparación de vialidades (líneas) y poblados (puntuales).</p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>En la vertiente de herramientas tecnológicas, una vez conocidos los formatos de información y trazando los primeros esquemas de análisis a implementar, se eligieron algunas herramientas que pudieran hacer posible la consulta, descarga, procesamiento, análisis y visualización.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>Por parte de la fuente de datos colaborativos, OSM cuenta con las etiquetas que representan objetos físicos existentes sobre el terreno, y proporciona detalle de la red vial y poblados en diferentes clasificaciones, a nivel mundial.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p><img src="http://localhost:4000/assets/img/toponimos.jpg" alt="image tooltip here" class="img-fluid" />
+Poblados Oficiales vs OSM</p>
 
-<p><img src="/assets/img/map.jpg" alt="image tooltip here" class="img-fluid" /></p>
+<h5 id="procesamiento-de-datos">Procesamiento de datos.</h5>
+<p>Una parte medular era saber ¿cómo hacer la comparación espacial y a nivel de atributos para identificar los nombres geográficos?, en esta fase se fueron probando y seleccionando metodologías de análisis espacial mediante ejercicios preliminares con información que los institutos consideraron para esta actividad.</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p><img src="http://localhost:4000/assets/img/data.jpg" alt="image tooltip here" class="img-fluid" />
+Analisis de Geometrias</p>
 
+<h5 id="análisis-de-resultados-del-ejercicio-exploratorio">Análisis de resultados del ejercicio exploratorio.</h5>
+<p>Aplicando análisis espacial como por ejemplo: sobreposición por diferencia e intersección, definición de áreas de influencia, se trazó un diagrama de operaciones espaciales que fueran más allá del análisis visual, se obtuvieron los primeros resultados con la comparación de áreas pequeñas.</p>
 
+<p>En esta fase se logró definir toda la arquitectura del desarrollo. El resultado fue una capa de información con los elementos que no existen en la otra fuente de datos, y un archivo de atributos principales (con los nombres de las dos fuentes comparado uno a uno).</p>
+
+<p><img src="http://localhost:4000/assets/img/diferencias.jpg" alt="image tooltip here" class="img-fluid" />
+Diferencias entre Datos Institucioles vs OSM</p>
+
+      </div>
+      <div class="col-12 col-md-3 mx-md-5 mt-md-5 h-100 p-3 border rounded-2">
+        
+        <h5 class="fw-bold my-3 text-center ">Nuestros Avances</h5>
+        <ul class="list-group list-group-flush">
+          
+          <li class="list-group-item"><a href="/analisis-exploratorio/">Analísis Exploratorio de Datos</a></li>
+          
+          <li class="list-group-item"><a href="/datos-colaborativos/">Fuente de Datos Colaborativos</a></li>
+          
+          <li class="list-group-item"><a href="/fuentes-de-datos/">Fuente de Datos Institucionales</a></li>
+          
+        </ul>
+      </div>
+    </div>
     <div class="bg-accent mt-5" style="height:0.25rem;"></div>
   </main>
   <footer class="bd-footer">
@@ -75,7 +109,7 @@
     <div class="row">
       <div class="col-lg-3 mb-3 text-center">
         <a class="link-dark text-decoration-none" href="https://www.ipgh.org/mx/" aria-label="IPGH">
-          <img src=" /assets/img/IPGH_logo.png" alt="NGIGEV" height="120px;">
+          <img src="/assets/img/IPGH_Logo.png" alt="NGIGEV" height="120px;">
           <h6 class="my-3">INSTITUTO PANAMERICANO DE GEOGRAFÍA E HISTORIA</h6>
         </a>
       </div>

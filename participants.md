@@ -1,19 +1,15 @@
 ---
 layout: page
 title: "Participantes"
-subtitle: "Intituciones de estados miembros del IPGH"
+subtitle: "Instituciones de Estados Miembros del IPGH"
 permalink: /miembros-participantes/
 image: /assets/img/triangles.png
 ---
 
-### INSTITUTO PANAMERICANO DE GEOGRAFÍA E HISTORIA -IPGH
+### Instituto Panamericano de Geografía e Historia -IPGH
 
 Es un organismo interamericano especializado de carácter científico-técnico de la ORGANIZACIÓN DE LOS ESTADOS AMERICANOS (OEA), 
 establecido de acuerdo con la “Carta de la Organización de los Estados Americanos”.
-
-El Instituto Panamericano de Geografía e Historia usa las siglas “IPGH” en español, francés y portugués; y “PAIGH” en inglés.
-
-El IPGH goza de autonomía técnica y financiera en el ejercicio de sus funciones, dentro de los límites fijados por sus estatutos.
 
 Como organismo especializado de la OEA, es misión del IPGH:
 

@@ -6,7 +6,7 @@ permalink: /vision-general/
 image: /assets/img/triangles.png
 ---
 
-## Integrar datos colaborativos
+### Integrar datos colaborativos
 
 Los institutos geográficos de cada país cuentan con una metodología establecida para la asignación de nombres oficiales, no obstante, cada uno ha realizado esfuerzos distintos en relación con la interoperabilidad de sus datos y plataforma tecnológica utilizada.
 

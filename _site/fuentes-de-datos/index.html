@@ -4,8 +4,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Fuentes de Datos Institucionales - NGIGEV - Nombres Geogroáficos Voluntarios</title>
-  <link rel="stylesheet" href="/%20/assets/css/main.css">
+  <title>Fuente de Datos Institucionales - NGIGEV - Nombres Geogroáficos Voluntarios</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
 
 </head>
 
@@ -35,6 +35,10 @@
                         <a class="nav-link fw-bold ms-3" href="/cartografia-colaborativa/"> Cartografia Colaborativa</a>
                     </li>
                     
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-3" href="https://geoid.mx/ipgh-dev/site/"> Maqueta Web</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -43,31 +47,99 @@
 
   <main class="container">
     <div class="mb-4">
-      <img src=" /assets/img/map.jpg" class="img-fluid" alt="mapa">
+      <img src=" /assets/img/fuentes.jpg" class="img-fluid" alt="mapa">
     </div>
-    <h2 class="mt-5">Fuentes de Datos Institucionales</h2>
-    <p class="mb-5"><span>Arbekos GH</span></p>
-    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <div class="row">
+      <div class="col-12 col-md-8 px-5">
+        <h2 class="mt-5">Fuente de Datos Institucionales</h2>
+        <p class="mb-5 text-muted"><span>Zitlaly Flores, Antonio de Jesús</span></p>
+        <p>Los datos de los institutos oficiales de los Estados Miembros del IPGH que participan en este proyecto son una de las fuentes mas importantes para la herramienta, sin ellos no seria posible realizar una comparación que nos permitiera visualizar las diferencias con los datos voluntarios.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>Para este propósito, se examinaron las características de los portales de información geográfica de los institutos participantes, y se realizaron los acercamientos con cada uno de ellos, en los que se presentaron las características de la información disponible, formatos, escalas, proyecciones cartográficas, tipos de representaciones espaciales y metadatos.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p>De este ejercicio, listamos las fuentes oficiales publicas de cada país participante con las coberturas de información requeridas para el ejercicio de comparación:</p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h5 id="colombia">Colombia</h5>
+<p>Pagina Oficial:<br />
+<a href="https://www.colombiaenmapas.gov.co/">https://www.colombiaenmapas.gov.co/</a></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>Servicios WFS:</p>
+<ul>
+  <li>https://mapas.igac.gov.co/server/services/carto/carto500000colombia2016/MapServer/WFSServer</li>
+  <li>https://mapas.igac.gov.co/server/services/carto/carto100000colombia2019/MapServer/WFSServer</li>
+  <li>https://mapas.igac.gov.co/server/services/carto/carto25000colombia2017/MapServer/WFSServer</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>Coberturas de Información Requerida:<br />
+Vialidades con nombres (limitados) de ejes viales, no cuenta con información de poblados o topónimos.</p>
 
-<p><img src="/assets/img/map.jpg" alt="image tooltip here" class="img-fluid" /></p>
+<h5 id="costa-rica">Costa Rica</h5>
+<p>Pagina Oficial:<br />
+<a href="https://www.snitcr.go.cr">https://www.snitcr.go.cr</a></p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>Servicios WFS:</p>
+<ul>
+  <li>https://geos.snitcr.go.cr/be/IGN_5/wfs</li>
+  <li>https://geos.snitcr.go.cr/be/IGN_NG/wfs</li>
+  <li>https://geos.snitcr.go.cr/be/IGN_25/wfs</li>
+</ul>
+
+<p>Coberturas de Información Requerida:<br />
+Vialidades con nombres, información de poblados o topónimos.</p>
+
+<h5 id="méxico">México</h5>
+<p>Pagina Oficial:<br />
+<a href="https://www.inegi.org.mx/default.html">https://www.inegi.org.mx/default.html</a></p>
+
+<p>Servicios WFS:
+No cuenta con servicio WFS</p>
+
+<p>Coberturas de Información Requerida: 
+cuenta con basta información, red vial y poblados a nivel Nacional y por estados, en formato Shape.</p>
+
+<h5 id="panamá">Panamá</h5>
+<p>Pagina Oficial:<br />
+<a href="http://www.ipde.gob.pa">http://www.ipde.gob.pa</a></p>
+
+<p>Servicios WFS:</p>
+<ul>
+  <li>WFS de poblados:<br />
+https://aig-hg-portal.innovacion.gob.pa/aigserver/services/Hosted/Lugar_Poblado/MapServer/WFSServer?service=wfs&amp;request=getcapabilities</li>
+  <li>https://geo-01.innovacion.gob.pa/geoserver/wfs?access_token=3d966b2d4f1011ed997e005056871877?format_options%3Dcharset%3AUTF-8&amp;typename=geonode%3Acarretera&amp;outputFormat=SHAPE-ZIP&amp;version=1.0.0&amp;access_token=3d966b2d4f1011ed997e005056871877</li>
+</ul>
+
+<p>Coberturas de Información Requerida:<br />
+Información de poblados o topónimos.</p>
+
+<h5 id="república-dominicana">República Dominicana</h5>
+<p>Pagina Oficial:<br />
+<a href="http://iderd.ign.gob.do/">http://iderd.ign.gob.do/</a></p>
+
+<p>Servicios WFS:</p>
+<ul>
+  <li>http://iderd.ign.gob.do/geoserver/wfs?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=GetCapabilities</li>
+  <li>https://inventariovial.mopc.gob.do/gvsigonline/core/load_public_project/DIGRE/</li>
+</ul>
+
+<p>Coberturas de Información Requerida:<br />
+Información de poblados o topónimos.</p>
 
 
+      </div>
+      <div class="col-12 col-md-3 mx-md-5 mt-md-5 h-100 p-3 border rounded-2">
+        
+        <h5 class="fw-bold my-3 text-center ">Nuestros Avances</h5>
+        <ul class="list-group list-group-flush">
+          
+          <li class="list-group-item"><a href="/analisis-exploratorio/">Analísis Exploratorio de Datos</a></li>
+          
+          <li class="list-group-item"><a href="/datos-colaborativos/">Fuente de Datos Colaborativos</a></li>
+          
+          <li class="list-group-item"><a href="/fuentes-de-datos/">Fuente de Datos Institucionales</a></li>
+          
+        </ul>
+      </div>
+    </div>
     <div class="bg-accent mt-5" style="height:0.25rem;"></div>
   </main>
   <footer class="bd-footer">
@@ -75,7 +147,7 @@
     <div class="row">
       <div class="col-lg-3 mb-3 text-center">
         <a class="link-dark text-decoration-none" href="https://www.ipgh.org/mx/" aria-label="IPGH">
-          <img src=" /assets/img/IPGH_logo.png" alt="NGIGEV" height="120px;">
+          <img src="/assets/img/IPGH_Logo.png" alt="NGIGEV" height="120px;">
           <h6 class="my-3">INSTITUTO PANAMERICANO DE GEOGRAFÍA E HISTORIA</h6>
         </a>
       </div>

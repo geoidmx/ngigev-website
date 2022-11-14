@@ -1,35 +1,30 @@
 ---
 layout: post
-title:  "Datos Colaborativos"
+title:  "Fuente de Datos Colaborativos"
 date:   2022-11-10 12:15:38 -0600
 categories: datos
-author: "Arbekos GH"
+author: "Antonio de Jesus"
 permalink: /datos-colaborativos/
 image: /assets/img/map.jpg
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Otra fuente de datos importante para este proyecto son los datos colaborativos, OpenStreetMaps - OSM es comunidad de colaboradores que esta continuamente realizando contribuciones para crear, mantener y actualizar datos a lo largo de todo el mundo. 
 
-Jekyll requires blog post files to be named according to the following format:
+Basada en datos abiertos, OSM es la mayor base de datos gratuita, con la que puedes usar libremente la información para cualquier propósito, siempre y cuando des crédito a OpenStreetMap y a sus colaboradores, y que cuenta con el tipo de información y detalle que se busca para este proceso.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+No obstante, es necesario obtener esta información desde OSM para realizar los análisis pertinentes de nuestra objetivo.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+##### Extracción de Datos en OSM
 
-Jekyll also offers powerful support for code snippets:
+Para obtener los datos de OSM usamos la [API Overpass][overpass-api], que mantiene una copia de la base de datos principal al día con estas actualizaciones minuciosas y las proporciona para su búsqueda. No sólo existen instancias públicas a las que se puede enviar una solicitud. También es posible tener una instancia propia porque la API de Overpass es de código abierto, con una instalación sencilla y requisitos de hardware razonables.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+La API de Overpass está diseñada para responder a las consultas de otro software a través de Internet. Por esa razón recibió el nombre de API. Por lo tanto, en el capítulo Herramientas descendentes se explica la conexión directa de muchas aplicaciones descendentes populares.
 
-![image tooltip here]({{ site.url }}/assets/img/map.jpg){:class="img-fluid"}
+Una manera simple de conocer la extracción de datos es a través de [Overpass Turbo][overpass-turbo] una aplicación web que permite puede ejecutar consultas Overpass API y analizar los datos resultantes de OSM de forma interactiva en un mapa.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+![image tooltip here]({{ site.url }}/assets/img/overpass.jpg){:class="img-fluid"}
+Consulta de caminos en Overpass Turbo
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+[overpass-api]: https://overpass-api.de/
+[overpass-turbo]: https://overpass-turbo.eu/
