@@ -2347,6 +2347,8 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .bg-gradient-contrast { background: linear-gradient(to right, #CAA45D, #F0C36D 100%); }
 
+.bg-image { background-image: url(""); background-repeat: no-repeat; background-size: 80%; background-position: center right; }
+
 a { color: #CAA45D; }
 
 .text-accent { color: #CAA45D; }
@@ -2356,5 +2358,7 @@ a { color: #CAA45D; }
 body { font-weight: 400; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-weight: 600; }
+
+@media (min-width: 576px) { .bg-image { background-size: 40%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -63,6 +63,13 @@ $btn-transition: 0.4s;
   background: linear-gradient(to right, $accent-1, $accent-2 100%);
 }
 
+.bg-image{
+  background-image: url(''); 
+  background-repeat: no-repeat; 
+  background-size: 80%; 
+  background-position: center right;
+}
+
 a {
   color: $accent-1;
 }
@@ -81,4 +88,10 @@ body{
 
 h1,h2,h3,h4,h5,h6{
   font-weight: 600;
+}
+
+@media (min-width: 576px) { 
+  .bg-image{
+    background-size: 40%;
+  }
 }

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Visión General"
-subtitle: "Aplicativos de nombres geograficos por pais"
+subtitle: "Integrar datos colaborativos"
 permalink: /vision-general/
 image: /assets/img/triangles.png
 ---
